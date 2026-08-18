@@ -1,0 +1,21 @@
+# Drift-Sense (Applied Materials / IESA-SEMICON Hackathon 2026, Track 2)
+#
+# Exact versions this submission was built and tested against (the FAQ
+# slide explicitly asks for "pip freeze your env dependencies to
+# reproduce exact results"). No deep-learning framework is required --
+# the CNN patch matcher (src/cnn_matcher.py) is hand-written in NumPy;
+# see README.md "Why a hand-written CNN" for why that's a deliberate
+# reliability decision. Minimum-version installs (`pip install
+# numpy opencv-python-headless scipy scikit-learn joblib pandas`) are
+# also expected to work fine -- these pins are for exact reproduction,
+# not a hard floor.
+
+numpy==2.4.4
+opencv-python-headless==4.13.0.92   # NOTE: plain "4.13.0" does not exist on PyPI and
+                                     # breaks `pip install -r requirements.txt` outright on
+                                     # a clean machine (confirmed) -- opencv-python(-headless)
+                                     # releases always carry this trailing build component.
+scipy==1.17.1
+scikit-learn==1.8.0     # only used by the optional learned confidence calibrator
+joblib==1.5.3             # (de)serializes the confidence calibrator's weights
+pandas==3.0.2               # metadata.csv convenience I/O in evaluate.py
