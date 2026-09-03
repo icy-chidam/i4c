@@ -1,0 +1,14 @@
+{
+  "reference": "data\\test\\references\\test_00020.png",
+  "search": "data\\test\\searches\\test_00020.png",
+  "x": 589.22,
+  "y": 566.66,
+  "confidence": 0.965,
+  "scale": 10.0,
+  "rotation_deg": 3.0,
+  "num_candidate_peaks": 2,
+  "cnn_used": true,
+  "cnn_score": 0.965,
+  "tie_break_method": "cnn_landmark",
+  "time_ms": 434.8
+}
