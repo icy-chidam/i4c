@@ -1,0 +1,32 @@
+id    set  pres peak   err_px   z_hat/z        th_hat/th      credit
+p001  A    1     0.956     0.46  8.00/ 8.00     +0.0/ +0.0    1.00  
+p002  A    1     0.896     0.32 10.00/10.00     -1.0/ -1.2    1.00  
+p003  A    1     0.893     0.37 12.00/12.00     +0.0/ +0.0    1.00  
+p004  A    1     0.813     0.80  9.00/ 9.15     +4.0/ +4.6    1.00  
+p005  A    1     0.856     0.43 11.50/11.30     -5.0/ -4.9    1.00  
+p006  A    1     0.820     0.96  8.50/ 8.60     +2.0/ +2.3    1.00  
+p007  A    1     0.768     0.35 10.50/10.75     -2.0/ -3.1    1.00  
+p008  A    1     0.868     0.28 12.00/11.90     +1.0/ +1.4    1.00  
+p009  B    1     0.805     0.15  9.50/ 9.40     +3.0/ +3.7    1.00  
+p010  B    1     0.634     1.50 10.50/10.60     -3.0/ -2.6    0.80  
+p011  B    1     0.338     1.13  8.50/ 8.25     +5.0/ +4.9    0.00  
+p012  B    1     0.407     0.31 12.00/11.75     -4.0/ -4.4    0.00  
+p013  B    1     0.681     0.66 12.00/12.00     +1.0/ +0.6    1.00  
+p014  B    1     0.533     0.37  8.00/ 8.00     -1.0/ -0.9    0.00  
+p015  C    0     0.376      nan -              -                    
+p016  C    0     0.293      nan -              -                    
+p017  C    0     0.279      nan -              -                    
+p018  C    0     0.393      nan -              -                    
+p019  D    1     0.777     0.11 10.50/10.30     +1.0/ +1.9    1.00  
+p020  D    1     0.761     0.18  9.00/ 9.05     -4.0/ -4.0    1.00  
+
+--- calibration ---
+present peaks : min=0.338 max=0.956
+absent  peaks : min=0.279 max=0.393
+separation gap: -0.055  (positive = rejectable by threshold)
+rejection @ thr=0.55: TP=13 FP=0 FN=3 precision=1.00 recall=0.81 F1=0.897
+Set A: mean credit=1.000 median err=0.40px
+Set B: mean credit=0.467 median err=0.51px
+Set D: mean credit=1.000 median err=0.15px
+pose (coarse grid): scale within 3.0% worst, median 1.0%; theta worst 1.10 deg, median 0.35 deg
+overall mean credit (present pairs): 0.800
